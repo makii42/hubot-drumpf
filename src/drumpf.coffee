@@ -1,5 +1,6 @@
 # Description:
-#   <description of the scripts functionality>
+#   Does an awesome drumpf speech about a specified topic, using
+#   very simple words, so everybody can follow.
 #
 # Dependencies:
 #   none
@@ -8,15 +9,15 @@
 #   none
 #
 # Commands:
-#   hubot <trigger> - <what the respond trigger does>
-#   <trigger> - <what the hear trigger does>
+#   hubot drumpf <phrase> - will do a drumpf speech about <phrase>
+#   hubot trump <phrase> - will do a drumpf speech about <phrase>
+#   hubot trumpf me <phrase> - will do a drumpf speech about <phrase>
 #
 # Notes:
 #   Let's make hubot great again!
 #
 # Author:
 #   makii42
-
 module.exports = (robot) ->
   robot.respond /[t|d]rumpf? (me )?(.+)$/, (msg) ->
     topic = msg.match[2]
