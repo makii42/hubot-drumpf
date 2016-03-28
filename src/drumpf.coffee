@@ -1,6 +1,25 @@
+# Description:
+#   <description of the scripts functionality>
+#
+# Dependencies:
+#   none
+#
+# Configuration:
+#   none
+#
+# Commands:
+#   hubot <trigger> - <what the respond trigger does>
+#   <trigger> - <what the hear trigger does>
+#
+# Notes:
+#   Let's make hubot great again!
+#
+# Author:
+#   makii42
+
 module.exports = (robot) ->
-  robot.respond /drumpf (.+)$/, (msg) ->
-    topic = msg.match[1]
+  robot.respond /[t|d]rumpf? (me )?(.+)$/, (msg) ->
+    topic = msg.match[2]
     trumpified = [
       "<drumpf>",
       "Are you asking me about #{topic}?",
