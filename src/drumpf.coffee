@@ -1,10 +1,7 @@
-
-
-
 module.exports = (robot) ->
-  robot.respond /[dt]rumpf? (.+)/, (msg) ->
+  robot.respond /drumpf (.+)$/, (msg) ->
     topic = msg.match[1]
-    msg = [
+    trumpified = [
       "<drumpf>",
       "Are you asking me about #{topic}?",
       "Let me tell you about #{topic}.",
@@ -15,4 +12,4 @@ module.exports = (robot) ->
       "Next question.",
       "</drumpf>"
     ].join " "
-    msg.reply msg
+    msg.reply trumpified
