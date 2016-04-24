@@ -1,6 +1,6 @@
 {
   "name": "hubot-drumpf",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny script that MAKES HUBOT GREAT AGAIN!",
   "main": "src/drumpf.coffee",
   "scripts": {
