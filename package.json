@@ -7,7 +7,8 @@
     "clean": "rm -rf node_modules coverage",
     "test": "npm run mocha-tests && npm run coverage",
     "mocha-tests": "mocha",
-    "coverage": "istanbul report text-summary lcov cobertura"
+    "coverage": "istanbul report text-summary lcov cobertura",
+    "check": "autochecker"
   },
   "repository": {
     "type": "git",
@@ -26,12 +27,13 @@
   },
   "homepage": "https://github.com/makii42/hubot-drumpf#readme",
   "devDependencies": {
+    "autochecker": "^0.5.2",
     "chai": "^3.5.0",
     "coffee-coverage": "^1.0.1",
     "coffee-jshint": "^0.2.3",
     "coffee-script": "^1.10.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
-    "mock-hubot": "makii42/mock-hubot#fix-callback-up-to-reply"
+    "mock-hubot": "^1.1.0"
   }
 }
