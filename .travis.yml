@@ -8,6 +8,7 @@ node_js:
   - "4.2"
   - "5"
   - "5.1"
+  - "10"
 notifications:
   irc: "irc.freenode.org#makii-42"
   email:
